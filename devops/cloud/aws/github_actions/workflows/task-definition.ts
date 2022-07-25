@@ -70,14 +70,14 @@ module.exports = {
             ],
             "environmentFiles": null,
             "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@127.0.0.1:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"127.0.0.1"},{"name":"SECURITYURL","value":"http://127.0.0.1:8003"},{"name":"AUTHPROXYURL","value":"http://127.0.0.1:8001"},{"name":"ADMINURL","value":"http://127.0.0.1:8004"},{"name":"GCAMURL","value":"http://127.0.0.1:8007"},{"name":"APIGATEWAY","value":"http://127.0.0.1:8000"},{"name":"SYSTEMCREDENTIALMANAGERURL","value":"http://127.0.0.1:8005"}
-            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8026"}
-            ,{"name":"FOODMANAGERURL","value":"http://healthmonkstart99410.local:8027"}
-            ,{"name":"PERSONMANAGERURL","value":"http://healthmonkstart99410.local:8028"}
-            ,{"name":"NUTRITIONURL","value":"http://healthmonkstart99410.local:8029"}
-            ,{"name":"MEDICATIONMANAGERURL","value":"http://healthmonkstart99410.local:8030"}
-            ,{"name":"PRESCRIPTIONMANAGERURL","value":"http://healthmonkstart99410.local:8031"}
-            ,{"name":"WORKOUTURL","value":"http://healthmonkstart99410.local:8032"}
-            ,{"name":"SLEEPTRACKURL","value":"http://healthmonkstart99410.local:8033"}
+            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8034"}
+            ,{"name":"FOODMANAGERURL","value":"http://healthmonkstart99410.local:8035"}
+            ,{"name":"PERSONMANAGERURL","value":"http://healthmonkstart99410.local:8036"}
+            ,{"name":"NUTRITIONURL","value":"http://healthmonkstart99410.local:8037"}
+            ,{"name":"MEDICATIONMANAGERURL","value":"http://healthmonkstart99410.local:8038"}
+            ,{"name":"PRESCRIPTIONMANAGERURL","value":"http://healthmonkstart99410.local:8039"}
+            ,{"name":"WORKOUTURL","value":"http://healthmonkstart99410.local:8040"}
+            ,{"name":"SLEEPTRACKURL","value":"http://healthmonkstart99410.local:8041"}
             ],
             "secrets": null,
             "mountPoints": [
@@ -299,7 +299,7 @@ module.exports = {
             ],
             "environmentFiles": null,
             "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@127.0.0.1:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"127.0.0.1"},{"name":"SECURITYURL","value":"http://127.0.0.1:8003"},{"name":"AUTHPROXYURL","value":"http://127.0.0.1:8001"},{"name":"ADMINURL","value":"http://127.0.0.1:8004"},{"name":"GCAMURL","value":"http://127.0.0.1:8007"},{"name":"APIGATEWAY","value":"http://127.0.0.1:8000"}
-            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8026"}
+            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8034"}
             ],
             "mountPoints": [
                 {
@@ -380,9 +380,9 @@ module.exports = {
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": "8026",
+                    "containerPort": "8034",
                     "protocol": "tcp",
-                    "hostPort": "8026"
+                    "hostPort": "8034"
                 }
             ],
             "environmentFiles": null,
