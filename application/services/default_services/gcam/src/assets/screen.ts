@@ -31,5 +31,47 @@
 {"resources":"My Meal / Breakfast ", "role":"Guest"}
     ,
 {"resources":"edited details popup screen", "role":"Guest"}
+    ,
+{"resources":"persondetails", "role":"Guest"}
+    ,
+{"resources":"BMI Details", "role":"Guest"}
+    ,
+{"resources":"Active Details", "role":"Guest"}
+    ,
+{"resources":"Summery Screens", "role":"Guest"}
+    ,
+{"resources":"Person Details 1", "role":"Guest"}
+    ,
+{"resources":"bmi Details 1", "role":"Guest"}
+    ,
+{"resources":"exercisescr", "role":"Guest"}
+    ,
+{"resources":"track workout front screen ", "role":"Guest"}
+    ,
+{"resources":"Frequently Tracked Workouts", "role":"Guest"}
+    ,
+{"resources":"workout walking details", "role":"Guest"}
+    ,
+{"resources":"after details walking section", "role":"Guest"}
+    ,
+{"resources":"workout reminder popup screen", "role":"Guest"}
+    ,
+{"resources":"workout swimming  details", "role":"Guest"}
+    ,
+{"resources":"after details swimming section", "role":"Guest"}
+    ,
+{"resources":"after deleting swimming section", "role":"Guest"}
+    ,
+{"resources":"Sleep Goal", "role":"Guest"}
+    ,
+{"resources":"sleep track landing section", "role":"Guest"}
+    ,
+{"resources":"edit the Recommended", "role":"Guest"}
+    ,
+{"resources":"popup screen date ", "role":"Guest"}
+    ,
+{"resources":"deleted the data ", "role":"Guest"}
+    ,
+{"resources":"popup screen time", "role":"Guest"}
     
 ]
