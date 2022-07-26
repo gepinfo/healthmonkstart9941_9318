@@ -43,11 +43,7 @@ jobs:
           aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-gepfilemanager --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
           aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-fluentd --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
           aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-systementry --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
-          aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-foodmanager --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
-          aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-personmanager --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
           aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-nutrition --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
-          aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-medicationmanager --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
-          aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-prescriptionmanager --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
           aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-workout --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
           aws ecr create-repository --repository-name geppetto-generatedcode-healthmonkstart9941-9318-sleeptrack --tags Key=project_name,Value=${{ env.PROJECT_NAME }} Key=name,Value=${{ env.PROJECT_NAME }} --region us-east-1
   Build_and_upload_docker_images_to_ECR:
@@ -110,26 +106,10 @@ jobs:
           docker build -t $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-systementry:$IMAGE_TAG .
           docker push $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-systementry:$IMAGE_TAG
           echo "Successfully build the docker image for systementry and pushed to aws ecr"
-          cd ../foodmanager
-          docker build -t $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-foodmanager:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-foodmanager:$IMAGE_TAG
-          echo "Successfully build the docker image for foodmanager and pushed to aws ecr"
-          cd ../personmanager
-          docker build -t $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-personmanager:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-personmanager:$IMAGE_TAG
-          echo "Successfully build the docker image for personmanager and pushed to aws ecr"
           cd ../nutrition
           docker build -t $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-nutrition:$IMAGE_TAG .
           docker push $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-nutrition:$IMAGE_TAG
           echo "Successfully build the docker image for nutrition and pushed to aws ecr"
-          cd ../medicationmanager
-          docker build -t $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-medicationmanager:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-medicationmanager:$IMAGE_TAG
-          echo "Successfully build the docker image for medicationmanager and pushed to aws ecr"
-          cd ../prescriptionmanager
-          docker build -t $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-prescriptionmanager:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-prescriptionmanager:$IMAGE_TAG
-          echo "Successfully build the docker image for prescriptionmanager and pushed to aws ecr"
           cd ../workout
           docker build -t $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-workout:$IMAGE_TAG .
           docker push $ECR_REGISTRY/geppetto-generatedcode-healthmonkstart9941-9318-workout:$IMAGE_TAG
@@ -199,8 +179,8 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: .github/workflows/task-definition_0.json
-          container-name: foodmanager-9318
-          image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthmonkstart9941-9318-foodmanager:latest
+          container-name: nutrition-9318
+          image: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthmonkstart9941-9318-nutrition:latest
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:

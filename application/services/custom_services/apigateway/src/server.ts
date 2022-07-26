@@ -11,11 +11,7 @@ import {
     CamundaController,
     systemcredentialmanagerController,
     UserController,
-    foodController,
-    persondetailsController,
     nutritiondetailsController,
-    medicationdetailsController,
-    prescriptionController,
     workoutdetailsController,
     sleeptrackdetailsController
     } from './apicontroller';
@@ -29,11 +25,7 @@ let apisController = [
     new CamundaController(),
     new systemcredentialmanagerController(),
     new UserController(),
-    new foodController(),
-    new persondetailsController(),
     new nutritiondetailsController(),
-    new medicationdetailsController(),
-    new prescriptionController(),
     new workoutdetailsController(),
     new sleeptrackdetailsController()
     ]

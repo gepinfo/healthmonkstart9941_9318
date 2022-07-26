@@ -137,11 +137,7 @@ services:
       - securitymanager
       - systemcredentialmanager
       - systementry
-      - foodmanager
-      - personmanager
       - nutrition
-      - medicationmanager
-      - prescriptionmanager
       - workout
       - sleeptrack
 
@@ -209,39 +205,7 @@ services:
     image: systementry-9318
     container_name: systementry-9318
     ports: 
-      - 8034:8034
-    env_file: .env
-    depends_on:
-      - mongo
-    logging:
-      driver: "fluentd"
-      options:
-        fluentd-address: 0.0.0.0:24224
-        fluentd-async-connect: "true"
-        tag: fluent
-
-  foodmanager: 
-    build: ../../../application/services/custom_services/foodmanager
-    image: foodmanager-9318
-    container_name: foodmanager-9318
-    ports: 
-      - 8035:8035
-    env_file: .env
-    depends_on:
-      - mongo
-    logging:
-      driver: "fluentd"
-      options:
-        fluentd-address: 0.0.0.0:24224
-        fluentd-async-connect: "true"
-        tag: fluent
-
-  personmanager: 
-    build: ../../../application/services/custom_services/personmanager
-    image: personmanager-9318
-    container_name: personmanager-9318
-    ports: 
-      - 8036:8036
+      - 8010:8010
     env_file: .env
     depends_on:
       - mongo
@@ -257,39 +221,7 @@ services:
     image: nutrition-9318
     container_name: nutrition-9318
     ports: 
-      - 8037:8037
-    env_file: .env
-    depends_on:
-      - mongo
-    logging:
-      driver: "fluentd"
-      options:
-        fluentd-address: 0.0.0.0:24224
-        fluentd-async-connect: "true"
-        tag: fluent
-
-  medicationmanager: 
-    build: ../../../application/services/custom_services/medicationmanager
-    image: medicationmanager-9318
-    container_name: medicationmanager-9318
-    ports: 
-      - 8038:8038
-    env_file: .env
-    depends_on:
-      - mongo
-    logging:
-      driver: "fluentd"
-      options:
-        fluentd-address: 0.0.0.0:24224
-        fluentd-async-connect: "true"
-        tag: fluent
-
-  prescriptionmanager: 
-    build: ../../../application/services/custom_services/prescriptionmanager
-    image: prescriptionmanager-9318
-    container_name: prescriptionmanager-9318
-    ports: 
-      - 8039:8039
+      - 8011:8011
     env_file: .env
     depends_on:
       - mongo
@@ -305,7 +237,7 @@ services:
     image: workout-9318
     container_name: workout-9318
     ports: 
-      - 8040:8040
+      - 8012:8012
     env_file: .env
     depends_on:
       - mongo
@@ -321,7 +253,7 @@ services:
     image: sleeptrack-9318
     container_name: sleeptrack-9318
     ports: 
-      - 8041:8041
+      - 8013:8013
     env_file: .env
     depends_on:
       - mongo
