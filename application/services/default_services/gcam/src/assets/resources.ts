@@ -445,6 +445,156 @@ export const resource_types = [
     ]
   },
   {
+    "resource_name": "persondetails",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "BMI Details",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "Active Details",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "Summery Screens",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "Person Details 1",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "bmi Details 1",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
     "resource_name": "Nutration drink details",
     "resource_type": "screen",
     "roles": [
@@ -746,381 +896,6 @@ export const resource_types = [
   },
   {
     "resource_name": "edited details popup screen",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "persondetails",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "BMI Details",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "Active Details",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "Summery Screens",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "Person Details 1",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "bmi Details 1",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "exercisescr",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "track workout front screen ",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "Frequently Tracked Workouts",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "workout walking details",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "after details walking section",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "workout reminder popup screen",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "workout swimming  details",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "after details swimming section",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "after deleting swimming section",
     "resource_type": "screen",
     "roles": [
       "admin", "user"
