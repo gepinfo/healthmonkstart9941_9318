@@ -13,12 +13,9 @@ info:
       name: Apache 2.0
       url: https://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-   - url: http://localhost:8016
-     description: sleeptrack
-   - url: http://localhost:8016
+   - url: http://localhost:8013
      description: sleeptrack
 tags:
-- name: sleeptrackdetails
 - name: sleeptrackdetails
 paths:
    "/sleeptrackdetails/{id}":
@@ -42,26 +39,6 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-      delete:
-         tags:
-         -  sleeptrackdetails
-         description: GpDelete
-         parameters:
-         -  in: "path"
-            description: GpDelete
-            name: id
-            required: true
-            schema:
-               type: "string"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
       get:
          tags:
          -  sleeptrackdetails
@@ -96,38 +73,7 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-      get:
-         tags:
-         -  sleeptrackdetails
-         description: GpSearch
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
    "/sleeptrackdetails/get/update":
-      put:
-         tags:
-         -  sleeptrackdetails
-         description: GpSearchForUpdate
-         requestBody:
-            content:
-               application/json:
-                  schema:
-                     $ref: "#/components/schemas/sleeptrackdetails"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
       put:
          tags:
          -  sleeptrackdetails
@@ -165,86 +111,6 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-      get:
-         tags:
-         -  sleeptrackdetails
-         description: GpGetAllValues
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
-      put:
-         tags:
-         -  sleeptrackdetails
-         description: GpUpdate
-         requestBody:
-            content:
-               application/json:
-                  schema:
-                     $ref: "#/components/schemas/sleeptrackdetails"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
-      post:
-         tags:
-         -  sleeptrackdetails
-         description: GpCreate
-         requestBody:
-            content:
-               application/json:
-                  schema:
-                     $ref: "#/components/schemas/sleeptrackdetails"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
-   "/sleeptrackdetails/{id}":
-   "/sleeptrackdetails":
-   "/sleeptrackdetails":
-   "/sleeptrackdetails/{id}":
-         tags:
-      get:
-         tags:
-         -  sleeptrackdetails
-         description: GpGetNounById
-         parameters:
-         -  in: "path"
-            description: GpGetNounById
-            name: id
-            required: true
-            schema:
-               type: "string"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
-   "/sleeptrackdetails/get/search":
-         tags:
-   "/sleeptrackdetails/get/update":
-         tags:
-   "/sleeptrackdetails":
-         tags:
       get:
          tags:
          -  sleeptrackdetails
@@ -278,12 +144,6 @@ paths:
                description: Internal Server Error
 components:
    schemas:
-      sleeptrackdetails:
-         type: object
-         properties:
-            sleeptrack_night:
-               type: "string"
-               description: Description
       sleeptrackdetails:
          type: object
          properties:

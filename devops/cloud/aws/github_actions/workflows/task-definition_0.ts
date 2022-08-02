@@ -12,185 +12,97 @@ module.exports = {
             "essential": true,
             "portMappings": [
                 {
+                    "containerPort": "8011",
+                    "protocol": "tcp",
+                    "hostPort": "8011"
+                }
+            ],
+            "environmentFiles": null,
+            "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@healthmonkstart9941.local:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"healthmonkstart9941.local"},{"name":"CAMUNDAPOD_URL","value":"http://healthmonkstart9941.local:8080"},{"name":"SECURITYURL","value":"http://healthmonkstart9941.local:8003"},{"name":"AUTHPROXYURL","value":"http://healthmonkstart9941.local:8001"},{"name":"ADMINURL","value":"http://healthmonkstart9941.local:8004"},{"name":"CAMUNDAURL","value":"http://healthmonkstart9941.local:8002"},{"name":"GCAMURL","value":"http://healthmonkstart9941.local:8007"},{"name":"APIGATEWAY","value":"http://healthmonkstart9941.local:8000"}],
+            "secrets": null,
+            "mountPoints": [
+                {
+                  "readOnly": null,
+                  "containerPath": "/path/to/container",
+                  "sourceVolume": "healthmonkstart9941"
+                }
+              ],
+            "volumesFrom": null,
+            "hostname": null,
+            "user": null,
+            "workingDirectory": null,
+            "extraHosts": null,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/healthmonkstart9941",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs",
+                    "awslogs-create-group": "true"
+                }
+            },
+            "ulimits": null,
+            "dockerLabels": null,
+            "dependsOn": null,
+            "repositoryCredentials": {
+                "credentialsParameter": ""
+            }
+        },          
+        {
+            "name": "workout-9318",
+            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthmonkstart9941-9318-workout:latest`,
+            "memoryReservation": "300",
+            "resourceRequirements": null,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": "8012",
+                    "protocol": "tcp",
+                    "hostPort": "8012"
+                }
+            ],
+            "environmentFiles": null,
+            "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@healthmonkstart9941.local:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"healthmonkstart9941.local"},{"name":"CAMUNDAPOD_URL","value":"http://healthmonkstart9941.local:8080"},{"name":"SECURITYURL","value":"http://healthmonkstart9941.local:8003"},{"name":"AUTHPROXYURL","value":"http://healthmonkstart9941.local:8001"},{"name":"ADMINURL","value":"http://healthmonkstart9941.local:8004"},{"name":"CAMUNDAURL","value":"http://healthmonkstart9941.local:8002"},{"name":"GCAMURL","value":"http://healthmonkstart9941.local:8007"},{"name":"APIGATEWAY","value":"http://healthmonkstart9941.local:8000"}],
+            "secrets": null,
+            "mountPoints": [
+                {
+                  "readOnly": null,
+                  "containerPath": "/path/to/container",
+                  "sourceVolume": "healthmonkstart9941"
+                }
+              ],
+            "volumesFrom": null,
+            "hostname": null,
+            "user": null,
+            "workingDirectory": null,
+            "extraHosts": null,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/healthmonkstart9941",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs",
+                    "awslogs-create-group": "true"
+                }
+            },
+            "ulimits": null,
+            "dockerLabels": null,
+            "dependsOn": null,
+            "repositoryCredentials": {
+                "credentialsParameter": ""
+            }
+        },          
+        {
+            "name": "sleeptrack-9318",
+            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthmonkstart9941-9318-sleeptrack:latest`,
+            "memoryReservation": "300",
+            "resourceRequirements": null,
+            "essential": true,
+            "portMappings": [
+                {
                     "containerPort": "8013",
                     "protocol": "tcp",
                     "hostPort": "8013"
-                }
-            ],
-            "environmentFiles": null,
-            "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@healthmonkstart9941.local:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"healthmonkstart9941.local"},{"name":"CAMUNDAPOD_URL","value":"http://healthmonkstart9941.local:8080"},{"name":"SECURITYURL","value":"http://healthmonkstart9941.local:8003"},{"name":"AUTHPROXYURL","value":"http://healthmonkstart9941.local:8001"},{"name":"ADMINURL","value":"http://healthmonkstart9941.local:8004"},{"name":"CAMUNDAURL","value":"http://healthmonkstart9941.local:8002"},{"name":"GCAMURL","value":"http://healthmonkstart9941.local:8007"},{"name":"APIGATEWAY","value":"http://healthmonkstart9941.local:8000"}],
-            "secrets": null,
-            "mountPoints": [
-                {
-                  "readOnly": null,
-                  "containerPath": "/path/to/container",
-                  "sourceVolume": "healthmonkstart9941"
-                }
-              ],
-            "volumesFrom": null,
-            "hostname": null,
-            "user": null,
-            "workingDirectory": null,
-            "extraHosts": null,
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-group": "/ecs/healthmonkstart9941",
-                    "awslogs-region": "us-east-1",
-                    "awslogs-stream-prefix": "ecs",
-                    "awslogs-create-group": "true"
-                }
-            },
-            "ulimits": null,
-            "dockerLabels": null,
-            "dependsOn": null,
-            "repositoryCredentials": {
-                "credentialsParameter": ""
-            }
-        },          
-        {
-            "name": "workout-9318",
-            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthmonkstart9941-9318-workout:latest`,
-            "memoryReservation": "300",
-            "resourceRequirements": null,
-            "essential": true,
-            "portMappings": [
-                {
-                    "containerPort": "8014",
-                    "protocol": "tcp",
-                    "hostPort": "8014"
-                }
-            ],
-            "environmentFiles": null,
-            "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@healthmonkstart9941.local:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"healthmonkstart9941.local"},{"name":"CAMUNDAPOD_URL","value":"http://healthmonkstart9941.local:8080"},{"name":"SECURITYURL","value":"http://healthmonkstart9941.local:8003"},{"name":"AUTHPROXYURL","value":"http://healthmonkstart9941.local:8001"},{"name":"ADMINURL","value":"http://healthmonkstart9941.local:8004"},{"name":"CAMUNDAURL","value":"http://healthmonkstart9941.local:8002"},{"name":"GCAMURL","value":"http://healthmonkstart9941.local:8007"},{"name":"APIGATEWAY","value":"http://healthmonkstart9941.local:8000"}],
-            "secrets": null,
-            "mountPoints": [
-                {
-                  "readOnly": null,
-                  "containerPath": "/path/to/container",
-                  "sourceVolume": "healthmonkstart9941"
-                }
-              ],
-            "volumesFrom": null,
-            "hostname": null,
-            "user": null,
-            "workingDirectory": null,
-            "extraHosts": null,
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-group": "/ecs/healthmonkstart9941",
-                    "awslogs-region": "us-east-1",
-                    "awslogs-stream-prefix": "ecs",
-                    "awslogs-create-group": "true"
-                }
-            },
-            "ulimits": null,
-            "dockerLabels": null,
-            "dependsOn": null,
-            "repositoryCredentials": {
-                "credentialsParameter": ""
-            }
-        },          
-        {
-            "name": "workout-9318",
-            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthmonkstart9941-9318-workout:latest`,
-            "memoryReservation": "300",
-            "resourceRequirements": null,
-            "essential": true,
-            "portMappings": [
-                {
-                    "containerPort": "8014",
-                    "protocol": "tcp",
-                    "hostPort": "8014"
-                }
-            ],
-            "environmentFiles": null,
-            "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@healthmonkstart9941.local:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"healthmonkstart9941.local"},{"name":"CAMUNDAPOD_URL","value":"http://healthmonkstart9941.local:8080"},{"name":"SECURITYURL","value":"http://healthmonkstart9941.local:8003"},{"name":"AUTHPROXYURL","value":"http://healthmonkstart9941.local:8001"},{"name":"ADMINURL","value":"http://healthmonkstart9941.local:8004"},{"name":"CAMUNDAURL","value":"http://healthmonkstart9941.local:8002"},{"name":"GCAMURL","value":"http://healthmonkstart9941.local:8007"},{"name":"APIGATEWAY","value":"http://healthmonkstart9941.local:8000"}],
-            "secrets": null,
-            "mountPoints": [
-                {
-                  "readOnly": null,
-                  "containerPath": "/path/to/container",
-                  "sourceVolume": "healthmonkstart9941"
-                }
-              ],
-            "volumesFrom": null,
-            "hostname": null,
-            "user": null,
-            "workingDirectory": null,
-            "extraHosts": null,
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-group": "/ecs/healthmonkstart9941",
-                    "awslogs-region": "us-east-1",
-                    "awslogs-stream-prefix": "ecs",
-                    "awslogs-create-group": "true"
-                }
-            },
-            "ulimits": null,
-            "dockerLabels": null,
-            "dependsOn": null,
-            "repositoryCredentials": {
-                "credentialsParameter": ""
-            }
-        },          
-        {
-            "name": "sleeptrack-9318",
-            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthmonkstart9941-9318-sleeptrack:latest`,
-            "memoryReservation": "300",
-            "resourceRequirements": null,
-            "essential": true,
-            "portMappings": [
-                {
-                    "containerPort": "8016",
-                    "protocol": "tcp",
-                    "hostPort": "8016"
-                }
-            ],
-            "environmentFiles": null,
-            "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@healthmonkstart9941.local:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"healthmonkstart9941.local"},{"name":"CAMUNDAPOD_URL","value":"http://healthmonkstart9941.local:8080"},{"name":"SECURITYURL","value":"http://healthmonkstart9941.local:8003"},{"name":"AUTHPROXYURL","value":"http://healthmonkstart9941.local:8001"},{"name":"ADMINURL","value":"http://healthmonkstart9941.local:8004"},{"name":"CAMUNDAURL","value":"http://healthmonkstart9941.local:8002"},{"name":"GCAMURL","value":"http://healthmonkstart9941.local:8007"},{"name":"APIGATEWAY","value":"http://healthmonkstart9941.local:8000"}],
-            "secrets": null,
-            "mountPoints": [
-                {
-                  "readOnly": null,
-                  "containerPath": "/path/to/container",
-                  "sourceVolume": "healthmonkstart9941"
-                }
-              ],
-            "volumesFrom": null,
-            "hostname": null,
-            "user": null,
-            "workingDirectory": null,
-            "extraHosts": null,
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-group": "/ecs/healthmonkstart9941",
-                    "awslogs-region": "us-east-1",
-                    "awslogs-stream-prefix": "ecs",
-                    "awslogs-create-group": "true"
-                }
-            },
-            "ulimits": null,
-            "dockerLabels": null,
-            "dependsOn": null,
-            "repositoryCredentials": {
-                "credentialsParameter": ""
-            }
-        },          
-        {
-            "name": "sleeptrack-9318",
-            "image": `${process.env.AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com/geppetto-generatedcode-healthmonkstart9941-9318-sleeptrack:latest`,
-            "memoryReservation": "300",
-            "resourceRequirements": null,
-            "essential": true,
-            "portMappings": [
-                {
-                    "containerPort": "8016",
-                    "protocol": "tcp",
-                    "hostPort": "8016"
                 }
             ],
             "environmentFiles": null,

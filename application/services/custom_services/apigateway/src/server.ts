@@ -13,8 +13,6 @@ import {
     UserController,
     nutrition_detailsController,
     execrisedetailsController,
-    execrisedetailsController,
-    sleeptrackdetailsController,
     sleeptrackdetailsController
     } from './apicontroller';
 
@@ -29,8 +27,6 @@ let apisController = [
     new UserController(),
     new nutrition_detailsController(),
     new execrisedetailsController(),
-    new execrisedetailsController(),
-    new sleeptrackdetailsController(),
     new sleeptrackdetailsController()
     ]
 class App {

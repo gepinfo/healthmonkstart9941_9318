@@ -7,6 +7,4 @@ export const SYSTEMCREDENTIALMANAGERURL = process.env.SYSTEMCREDENTIALMANAGERURL
 export const SYSTEMENTRYURL = process.env.SYSTEMENTRYURL;
 export const NUTRITIONURL = process.env.NUTRITIONURL;
 export const WORKOUTURL = process.env.WORKOUTURL;
-export const WORKOUTURL = process.env.WORKOUTURL;
-export const SLEEPTRACKURL = process.env.SLEEPTRACKURL;
 export const SLEEPTRACKURL = process.env.SLEEPTRACKURL;

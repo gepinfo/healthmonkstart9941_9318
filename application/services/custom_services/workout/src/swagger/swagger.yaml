@@ -13,12 +13,9 @@ info:
       name: Apache 2.0
       url: https://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-   - url: http://localhost:8014
-     description: workout
-   - url: http://localhost:8014
+   - url: http://localhost:8012
      description: workout
 tags:
-- name: execrisedetails
 - name: execrisedetails
 paths:
    "/execrisedetails/{id}":
@@ -42,46 +39,6 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-      delete:
-         tags:
-         -  execrisedetails
-         description: GpDelete
-         parameters:
-         -  in: "path"
-            description: GpDelete
-            name: id
-            required: true
-            schema:
-               type: "string"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
-      get:
-         tags:
-         -  execrisedetails
-         description: GpGetNounById
-         parameters:
-         -  in: "path"
-            description: GpGetNounById
-            name: id
-            required: true
-            schema:
-               type: "string"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
       get:
          tags:
          -  execrisedetails
@@ -116,38 +73,7 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-      get:
-         tags:
-         -  execrisedetails
-         description: GpSearch
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
    "/execrisedetails/get/update":
-      put:
-         tags:
-         -  execrisedetails
-         description: GpSearchForUpdate
-         requestBody:
-            content:
-               application/json:
-                  schema:
-                     $ref: "#/components/schemas/execrisedetails"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
       put:
          tags:
          -  execrisedetails
@@ -185,65 +111,6 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-      put:
-         tags:
-         -  execrisedetails
-         description: GpUpdate
-         requestBody:
-            content:
-               application/json:
-                  schema:
-                     $ref: "#/components/schemas/execrisedetails"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
-      get:
-         tags:
-         -  execrisedetails
-         description: GpGetAllValues
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
-      post:
-         tags:
-         -  execrisedetails
-         description: GpCreate
-         requestBody:
-            content:
-               application/json:
-                  schema:
-                     $ref: "#/components/schemas/execrisedetails"
-         responses:
-            200:
-               description: Success
-            400:
-               description: Bad Request
-            404:
-               description: Not Found
-            500:
-               description: Internal Server Error
-   "/execrisedetails":
-   "/execrisedetails":
-   "/execrisedetails/{id}":
-         tags:
-   "/execrisedetails/get/search":
-         tags:
-   "/execrisedetails/get/update":
-         tags:
-   "/execrisedetails":
-         tags:
       get:
          tags:
          -  execrisedetails
@@ -277,12 +144,6 @@ paths:
                description: Internal Server Error
 components:
    schemas:
-      execrisedetails:
-         type: object
-         properties:
-            execrise_details:
-               type: "string"
-               description: Description
       execrisedetails:
          type: object
          properties:

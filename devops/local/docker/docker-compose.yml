@@ -139,8 +139,6 @@ services:
       - systementry
       - nutrition
       - workout
-      - workout
-      - sleeptrack
       - sleeptrack
 
     logging:
@@ -207,7 +205,7 @@ services:
     image: systementry-9318
     container_name: systementry-9318
     ports: 
-      - 8012:8012
+      - 8010:8010
     env_file: .env
     depends_on:
       - mongo
@@ -223,71 +221,39 @@ services:
     image: nutrition-9318
     container_name: nutrition-9318
     ports: 
+      - 8011:8011
+    env_file: .env
+    depends_on:
+      - mongo
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 0.0.0.0:24224
+        fluentd-async-connect: "true"
+        tag: fluent
+
+  workout: 
+    build: ../../../application/services/custom_services/workout
+    image: workout-9318
+    container_name: workout-9318
+    ports: 
+      - 8012:8012
+    env_file: .env
+    depends_on:
+      - mongo
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 0.0.0.0:24224
+        fluentd-async-connect: "true"
+        tag: fluent
+
+  sleeptrack: 
+    build: ../../../application/services/custom_services/sleeptrack
+    image: sleeptrack-9318
+    container_name: sleeptrack-9318
+    ports: 
       - 8013:8013
-    env_file: .env
-    depends_on:
-      - mongo
-    logging:
-      driver: "fluentd"
-      options:
-        fluentd-address: 0.0.0.0:24224
-        fluentd-async-connect: "true"
-        tag: fluent
-
-  workout: 
-    build: ../../../application/services/custom_services/workout
-    image: workout-9318
-    container_name: workout-9318
-    ports: 
-      - 8014:8014
-    env_file: .env
-    depends_on:
-      - mongo
-    logging:
-      driver: "fluentd"
-      options:
-        fluentd-address: 0.0.0.0:24224
-        fluentd-async-connect: "true"
-        tag: fluent
-
-  workout: 
-    build: ../../../application/services/custom_services/workout
-    image: workout-9318
-    container_name: workout-9318
-    ports: 
-      - 8014:8014
-    env_file: .env
-    depends_on:
-      - mongo
-    logging:
-      driver: "fluentd"
-      options:
-        fluentd-address: 0.0.0.0:24224
-        fluentd-async-connect: "true"
-        tag: fluent
-
-  sleeptrack: 
-    build: ../../../application/services/custom_services/sleeptrack
-    image: sleeptrack-9318
-    container_name: sleeptrack-9318
-    ports: 
-      - 8016:8016
-    env_file: .env
-    depends_on:
-      - mongo
-    logging:
-      driver: "fluentd"
-      options:
-        fluentd-address: 0.0.0.0:24224
-        fluentd-async-connect: "true"
-        tag: fluent
-
-  sleeptrack: 
-    build: ../../../application/services/custom_services/sleeptrack
-    image: sleeptrack-9318
-    container_name: sleeptrack-9318
-    ports: 
-      - 8016:8016
     env_file: .env
     depends_on:
       - mongo

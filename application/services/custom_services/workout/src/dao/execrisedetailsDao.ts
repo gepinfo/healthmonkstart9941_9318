@@ -84,66 +84,6 @@ public async (){
     
     
     }
-public async (){
-    
-    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
-
-    
-
-    
-    
-    
-    }
-public async (){
-    
-    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
-
-    
-
-    
-    
-    
-    }
-public async (){
-    
-    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
-
-    
-
-    
-    
-    
-    }
-public async (){
-    
-    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
-
-    
-
-    
-    
-    
-    }
-public async (){
-    
-    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
-
-    
-
-    
-    
-    
-    }
-public async (){
-    
-    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
-
-    
-
-    
-    
-    
-    }
 
 
 }
