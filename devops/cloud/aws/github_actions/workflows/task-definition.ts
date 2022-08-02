@@ -70,10 +70,10 @@ module.exports = {
             ],
             "environmentFiles": null,
             "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@127.0.0.1:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"127.0.0.1"},{"name":"SECURITYURL","value":"http://127.0.0.1:8003"},{"name":"AUTHPROXYURL","value":"http://127.0.0.1:8001"},{"name":"ADMINURL","value":"http://127.0.0.1:8004"},{"name":"GCAMURL","value":"http://127.0.0.1:8007"},{"name":"APIGATEWAY","value":"http://127.0.0.1:8000"},{"name":"SYSTEMCREDENTIALMANAGERURL","value":"http://127.0.0.1:8005"}
-            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8018"}
-            ,{"name":"NUTRITIONURL","value":"http://healthmonkstart99410.local:8019"}
-            ,{"name":"WORKOUTURL","value":"http://healthmonkstart99410.local:8020"}
-            ,{"name":"SLEEPTRACKURL","value":"http://healthmonkstart99410.local:8021"}
+            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8012"}
+            ,{"name":"NUTRITIONURL","value":"http://healthmonkstart99410.local:8013"}
+            ,{"name":"WORKOUTURL","value":"http://healthmonkstart99410.local:8014"}
+            ,{"name":"SLEEPTRACKURL","value":"http://healthmonkstart99410.local:8015"}
             ],
             "secrets": null,
             "mountPoints": [
@@ -295,7 +295,7 @@ module.exports = {
             ],
             "environmentFiles": null,
             "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@127.0.0.1:27017/healthmonkstart9941_9318?authSource=admin"},{"name":"MONGO_DOMAIN","value":"127.0.0.1"},{"name":"SECURITYURL","value":"http://127.0.0.1:8003"},{"name":"AUTHPROXYURL","value":"http://127.0.0.1:8001"},{"name":"ADMINURL","value":"http://127.0.0.1:8004"},{"name":"GCAMURL","value":"http://127.0.0.1:8007"},{"name":"APIGATEWAY","value":"http://127.0.0.1:8000"}
-            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8018"}
+            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8012"}
             ],
             "mountPoints": [
                 {
@@ -376,9 +376,9 @@ module.exports = {
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": "8018",
+                    "containerPort": "8012",
                     "protocol": "tcp",
-                    "hostPort": "8018"
+                    "hostPort": "8012"
                 }
             ],
             "environmentFiles": null,

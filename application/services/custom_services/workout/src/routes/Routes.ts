@@ -1,9 +1,9 @@
 import { Request, Response, NextFunction } from "express";
-import { workoutdetailsController } from '../controller/workoutdetailsController';
+import { execrisedetailsController } from '../controller/execrisedetailsController';
 
 
 export class Routes {
-    private workoutdetails: workoutdetailsController = new workoutdetailsController();
+    private execrisedetails: execrisedetailsController = new execrisedetailsController();
     
     public routes(app): void {
           app.route('/health/entity-service').get((req: Request, res: Response) => {
@@ -11,13 +11,13 @@ export class Routes {
                 status: 'up'
             })
         })
-        app.route('/workoutdetails/:id').delete(this.workoutdetails.GpDelete);
-app.route('/workoutdetails/get/search').get(this.workoutdetails.GpSearch);
-app.route('/workoutdetails/get/update').put(this.workoutdetails.GpSearchForUpdate);
-app.route('/workoutdetails').put(this.workoutdetails.GpUpdate);
-app.route('/workoutdetails/:id').get(this.workoutdetails.GpGetNounById);
-app.route('/workoutdetails').get(this.workoutdetails.GpGetAllValues);
-app.route('/workoutdetails').post(this.workoutdetails.GpCreate);
+        app.route('/execrisedetails/:id').delete(this.execrisedetails.GpDelete);
+app.route('/execrisedetails/get/search').get(this.execrisedetails.GpSearch);
+app.route('/execrisedetails/get/update').put(this.execrisedetails.GpSearchForUpdate);
+app.route('/execrisedetails').put(this.execrisedetails.GpUpdate);
+app.route('/execrisedetails/:id').get(this.execrisedetails.GpGetNounById);
+app.route('/execrisedetails').get(this.execrisedetails.GpGetAllValues);
+app.route('/execrisedetails').post(this.execrisedetails.GpCreate);
      }
 
 }

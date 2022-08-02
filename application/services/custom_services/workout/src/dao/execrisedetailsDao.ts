@@ -2,7 +2,7 @@
 import { CustomLogger } from '../config/Logger'
 
 
-export class sleeptrackdetailsDao {
+export class execrisedetailsDao {
     
     constructor() { }
     getCredentialsData(connectorName) {
@@ -16,7 +16,7 @@ export class sleeptrackdetailsDao {
     }
     public async (){
     
-    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
 
     
 
@@ -26,7 +26,7 @@ export class sleeptrackdetailsDao {
     }
 public async (){
     
-    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
 
     
 
@@ -36,7 +36,7 @@ public async (){
     }
 public async (){
     
-    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
 
     
 
@@ -46,7 +46,7 @@ public async (){
     }
 public async (){
     
-    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
 
     
 
@@ -56,7 +56,7 @@ public async (){
     }
 public async (){
     
-    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
 
     
 
@@ -66,7 +66,7 @@ public async (){
     }
 public async (){
     
-    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
 
     
 
@@ -76,7 +76,7 @@ public async (){
     }
 public async (){
     
-    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+    new CustomLogger().showLogger('info', 'Enter into execrisedetailsDao.ts: ');
 
     
 

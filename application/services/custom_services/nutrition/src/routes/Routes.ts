@@ -1,9 +1,9 @@
 import { Request, Response, NextFunction } from "express";
-import { nutritiondetailsController } from '../controller/nutritiondetailsController';
+import { nutrition_detailsController } from '../controller/nutrition_detailsController';
 
 
 export class Routes {
-    private nutritiondetails: nutritiondetailsController = new nutritiondetailsController();
+    private nutrition_details: nutrition_detailsController = new nutrition_detailsController();
     
     public routes(app): void {
           app.route('/health/entity-service').get((req: Request, res: Response) => {
@@ -11,13 +11,13 @@ export class Routes {
                 status: 'up'
             })
         })
-        app.route('/nutritiondetails/:id').delete(this.nutritiondetails.GpDelete);
-app.route('/nutritiondetails/get/search').get(this.nutritiondetails.GpSearch);
-app.route('/nutritiondetails/get/update').put(this.nutritiondetails.GpSearchForUpdate);
-app.route('/nutritiondetails').put(this.nutritiondetails.GpUpdate);
-app.route('/nutritiondetails/:id').get(this.nutritiondetails.GpGetNounById);
-app.route('/nutritiondetails').get(this.nutritiondetails.GpGetAllValues);
-app.route('/nutritiondetails').post(this.nutritiondetails.GpCreate);
+        app.route('/nutrition_details/:id').delete(this.nutrition_details.GpDelete);
+app.route('/nutrition_details/get/search').get(this.nutrition_details.GpSearch);
+app.route('/nutrition_details/get/update').put(this.nutrition_details.GpSearchForUpdate);
+app.route('/nutrition_details').put(this.nutrition_details.GpUpdate);
+app.route('/nutrition_details/:id').get(this.nutrition_details.GpGetNounById);
+app.route('/nutrition_details').get(this.nutrition_details.GpGetAllValues);
+app.route('/nutrition_details').post(this.nutrition_details.GpCreate);
      }
 
 }

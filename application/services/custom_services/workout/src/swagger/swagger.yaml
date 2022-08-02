@@ -13,15 +13,15 @@ info:
       name: Apache 2.0
       url: https://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-   - url: http://localhost:8020
+   - url: http://localhost:8014
      description: workout
 tags:
-- name: workoutdetails
+- name: execrisedetails
 paths:
-   "/workoutdetails/{id}":
+   "/execrisedetails/{id}":
       delete:
          tags:
-         -  workoutdetails
+         -  execrisedetails
          description: GpDelete
          parameters:
          -  in: "path"
@@ -41,7 +41,7 @@ paths:
                description: Internal Server Error
       get:
          tags:
-         -  workoutdetails
+         -  execrisedetails
          description: GpGetNounById
          parameters:
          -  in: "path"
@@ -59,10 +59,10 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-   "/workoutdetails/get/search":
+   "/execrisedetails/get/search":
       get:
          tags:
-         -  workoutdetails
+         -  execrisedetails
          description: GpSearch
          responses:
             200:
@@ -73,16 +73,16 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-   "/workoutdetails/get/update":
+   "/execrisedetails/get/update":
       put:
          tags:
-         -  workoutdetails
+         -  execrisedetails
          description: GpSearchForUpdate
          requestBody:
             content:
                application/json:
                   schema:
-                     $ref: "#/components/schemas/workoutdetails"
+                     $ref: "#/components/schemas/execrisedetails"
          responses:
             200:
                description: Success
@@ -92,16 +92,16 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-   "/workoutdetails":
+   "/execrisedetails":
       put:
          tags:
-         -  workoutdetails
+         -  execrisedetails
          description: GpUpdate
          requestBody:
             content:
                application/json:
                   schema:
-                     $ref: "#/components/schemas/workoutdetails"
+                     $ref: "#/components/schemas/execrisedetails"
          responses:
             200:
                description: Success
@@ -113,7 +113,7 @@ paths:
                description: Internal Server Error
       get:
          tags:
-         -  workoutdetails
+         -  execrisedetails
          description: GpGetAllValues
          responses:
             200:
@@ -126,13 +126,13 @@ paths:
                description: Internal Server Error
       post:
          tags:
-         -  workoutdetails
+         -  execrisedetails
          description: GpCreate
          requestBody:
             content:
                application/json:
                   schema:
-                     $ref: "#/components/schemas/workoutdetails"
+                     $ref: "#/components/schemas/execrisedetails"
          responses:
             200:
                description: Success
@@ -144,9 +144,9 @@ paths:
                description: Internal Server Error
 components:
    schemas:
-      workoutdetails:
+      execrisedetails:
          type: object
          properties:
-            worktags:
+            execrise_details:
                type: "string"
                description: Description

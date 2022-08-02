@@ -13,15 +13,15 @@ info:
       name: Apache 2.0
       url: https://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-   - url: http://localhost:8019
+   - url: http://localhost:8013
      description: nutrition
 tags:
-- name: nutritiondetails
+- name: nutrition_details
 paths:
-   "/nutritiondetails/{id}":
+   "/nutrition_details/{id}":
       delete:
          tags:
-         -  nutritiondetails
+         -  nutrition_details
          description: GpDelete
          parameters:
          -  in: "path"
@@ -41,7 +41,7 @@ paths:
                description: Internal Server Error
       get:
          tags:
-         -  nutritiondetails
+         -  nutrition_details
          description: GpGetNounById
          parameters:
          -  in: "path"
@@ -59,10 +59,10 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-   "/nutritiondetails/get/search":
+   "/nutrition_details/get/search":
       get:
          tags:
-         -  nutritiondetails
+         -  nutrition_details
          description: GpSearch
          responses:
             200:
@@ -73,16 +73,16 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-   "/nutritiondetails/get/update":
+   "/nutrition_details/get/update":
       put:
          tags:
-         -  nutritiondetails
+         -  nutrition_details
          description: GpSearchForUpdate
          requestBody:
             content:
                application/json:
                   schema:
-                     $ref: "#/components/schemas/nutritiondetails"
+                     $ref: "#/components/schemas/nutrition_details"
          responses:
             200:
                description: Success
@@ -92,16 +92,16 @@ paths:
                description: Not Found
             500:
                description: Internal Server Error
-   "/nutritiondetails":
+   "/nutrition_details":
       put:
          tags:
-         -  nutritiondetails
+         -  nutrition_details
          description: GpUpdate
          requestBody:
             content:
                application/json:
                   schema:
-                     $ref: "#/components/schemas/nutritiondetails"
+                     $ref: "#/components/schemas/nutrition_details"
          responses:
             200:
                description: Success
@@ -113,7 +113,7 @@ paths:
                description: Internal Server Error
       get:
          tags:
-         -  nutritiondetails
+         -  nutrition_details
          description: GpGetAllValues
          responses:
             200:
@@ -126,13 +126,13 @@ paths:
                description: Internal Server Error
       post:
          tags:
-         -  nutritiondetails
+         -  nutrition_details
          description: GpCreate
          requestBody:
             content:
                application/json:
                   schema:
-                     $ref: "#/components/schemas/nutritiondetails"
+                     $ref: "#/components/schemas/nutrition_details"
          responses:
             200:
                description: Success
@@ -144,9 +144,9 @@ paths:
                description: Internal Server Error
 components:
    schemas:
-      nutritiondetails:
+      nutrition_details:
          type: object
          properties:
-            nutritionkcal:
+            nutrition_deatials:
                type: "string"
                description: Description

@@ -14,10 +14,14 @@ export class SefscreenService {
     ) { }
       GpSEF(Id: any): Observable<any> {
           let jwt_token = sessionStorage.getItem('JwtToken');
-                                
+                                                
  	 	return this.http.get(this.sharedService.WEB_API + `/systemEntryFeature/userdata/${Id}` + `?jwt_token=${jwt_token}`, undefined);}
-                                getChartData(Id:any): Observable<any> {
-                                    return this.http.get(this.sharedService.WEB_API + `/systemEntryFeature/chart/${Id}`);
+                                                getChartData(Id:any): Observable<any> {
+                                                    return this.http.get(this.sharedService.WEB_API + `/systemEntryFeature/chart/${Id}`);
+                                                }
+undefinedGpSEFhomedata(this.Id): Observable<any> {
+return this.http.get(this.sharedService.WEB_API + `/systemEntryFeature/homedata/${Id}`);
+};
       }
 
 }

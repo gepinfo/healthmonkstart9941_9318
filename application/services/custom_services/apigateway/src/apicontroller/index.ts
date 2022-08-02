@@ -5,6 +5,6 @@ export * from "./AdminController";
 export * from "./CamundaController";
 export * from "./systemcredentialmanagerController";
 export * from "./UserController";
-export * from "./nutritiondetailsController";
-export * from "./workoutdetailsController";
+export * from "./nutrition_detailsController";
+export * from "./execrisedetailsController";
 export * from "./sleeptrackdetailsController";

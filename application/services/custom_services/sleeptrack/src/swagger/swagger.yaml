@@ -13,7 +13,7 @@ info:
       name: Apache 2.0
       url: https://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-   - url: http://localhost:8021
+   - url: http://localhost:8015
      description: sleeptrack
 tags:
 - name: sleeptrackdetails
@@ -147,6 +147,6 @@ components:
       sleeptrackdetails:
          type: object
          properties:
-            entityflows:
+            sleeptrack_night:
                type: "string"
                description: Description

@@ -1,60 +1,59 @@
-import { Request, Response } from 'express';
-import { sleeptrackdetailsService } from '../service/sleeptrackdetailsService';
+
 import { CustomLogger } from '../config/Logger'
-let sleeptrackdetails = new sleeptrackdetailsService();
+
 
 export class sleeptrackdetailsController {
     
     constructor() { }
     
-    public GpDelete(req: Request, res: Response) {
-sleeptrackdetails.GpDelete(req, (response) => {
-                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: GpDelete');
+    public (req: Request, res: Response) {
+sleeptrackdetails.(req, (response) => {
+                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: ');
      res.status(200);
      res.json(response);
-                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: GpDelete');
+                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: ');
     })}
-public GpSearch(req: Request, res: Response) {
-sleeptrackdetails.GpSearch(req, (response) => {
-                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: GpSearch');
+public (req: Request, res: Response) {
+sleeptrackdetails.(req, (response) => {
+                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: ');
      res.status(200);
      res.json(response);
-                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: GpSearch');
+                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: ');
     })}
-public GpSearchForUpdate(req: Request, res: Response) {
-sleeptrackdetails.GpSearchForUpdate(req, (response) => {
-                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: GpSearchForUpdate');
+public (req: Request, res: Response) {
+sleeptrackdetails.(req, (response) => {
+                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: ');
      res.status(200);
      res.json(response);
-                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: GpSearchForUpdate');
+                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: ');
     })}
-public GpUpdate(req: Request, res: Response) {
-sleeptrackdetails.GpUpdate(req, (response) => {
-                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: GpUpdate');
+public (req: Request, res: Response) {
+sleeptrackdetails.(req, (response) => {
+                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: ');
      res.status(200);
      res.json(response);
-                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: GpUpdate');
+                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: ');
     })}
-public GpGetNounById(req: Request, res: Response) {
-sleeptrackdetails.GpGetNounById(req, (response) => {
-                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: GpGetNounById');
+public (req: Request, res: Response) {
+sleeptrackdetails.(req, (response) => {
+                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: ');
      res.status(200);
      res.json(response);
-                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: GpGetNounById');
+                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: ');
     })}
-public GpGetAllValues(req: Request, res: Response) {
-sleeptrackdetails.GpGetAllValues(req, (response) => {
-                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: GpGetAllValues');
+public (req: Request, res: Response) {
+sleeptrackdetails.(req, (response) => {
+                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: ');
      res.status(200);
      res.json(response);
-                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: GpGetAllValues');
+                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: ');
     })}
-public GpCreate(req: Request, res: Response) {
-sleeptrackdetails.GpCreate(req, (response) => {
-                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: GpCreate');
+public (req: Request, res: Response) {
+sleeptrackdetails.(req, (response) => {
+                new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsController.ts: ');
      res.status(200);
      res.json(response);
-                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: GpCreate');
+                new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsController.ts: ');
     })}
 
 
