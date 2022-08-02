@@ -32,6 +32,14 @@ spec:
     port: {{ .Values.service.workout.port }}
     targetPort: {{ .Values.service.workout.targetPort }}
 
+  - name: {{ .Values.service.workout.name }}
+    port: {{ .Values.service.workout.port }}
+    targetPort: {{ .Values.service.workout.targetPort }}
+
+  - name: {{ .Values.service.sleeptrack.name }}
+    port: {{ .Values.service.sleeptrack.port }}
+    targetPort: {{ .Values.service.sleeptrack.targetPort }}
+
   - name: {{ .Values.service.sleeptrack.name }}
     port: {{ .Values.service.sleeptrack.port }}
     targetPort: {{ .Values.service.sleeptrack.targetPort }}

@@ -70,6 +70,51 @@ public  (req: Request, callback){
          });
     }
     
+public  (req: Request, callback){
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsService.ts: ')
+     
+     sleeptrackdetails.(()=>{
+             new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsService.ts: ')
+         callback();
+         });
+    }
+    
+public  (req: Request, callback){
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsService.ts: ')
+     
+     sleeptrackdetails.(()=>{
+             new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsService.ts: ')
+         callback();
+         });
+    }
+    
+public  (req: Request, callback){
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsService.ts: ')
+     
+     sleeptrackdetails.(()=>{
+             new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsService.ts: ')
+         callback();
+         });
+    }
+    
+public  (req: Request, callback){
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsService.ts: ')
+     
+     sleeptrackdetails.(()=>{
+             new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsService.ts: ')
+         callback();
+         });
+    }
+    
+public  (req: Request, callback){
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsService.ts: ')
+     
+     sleeptrackdetails.(()=>{
+             new CustomLogger().showLogger('info', 'Exit from sleeptrackdetailsService.ts: ')
+         callback();
+         });
+    }
+    
     
     
     

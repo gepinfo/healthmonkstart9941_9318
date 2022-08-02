@@ -72,11 +72,23 @@ service:
     port: 8014
     targetPort: 8014
 
+  workout: 
+    name: workout
+    type: NodePort
+    port: 8014
+    targetPort: 8014
+
   sleeptrack: 
     name: sleeptrack
     type: NodePort
-    port: 8015
-    targetPort: 8015
+    port: 8016
+    targetPort: 8016
+
+  sleeptrack: 
+    name: sleeptrack
+    type: NodePort
+    port: 8016
+    targetPort: 8016
 
 
 deployment:
@@ -114,6 +126,14 @@ deployment:
   workout: 
     name: workout
     image: geppettotest/healthmonkstart9941-workout:1.0
+
+  workout: 
+    name: workout
+    image: geppettotest/healthmonkstart9941-workout:1.0
+
+  sleeptrack: 
+    name: sleeptrack
+    image: geppettotest/healthmonkstart9941-sleeptrack:1.0
 
   sleeptrack: 
     name: sleeptrack

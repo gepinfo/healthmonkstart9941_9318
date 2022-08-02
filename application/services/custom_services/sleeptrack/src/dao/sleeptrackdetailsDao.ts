@@ -84,6 +84,56 @@ public async (){
     
     
     }
+public async (){
+    
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+
+    
+
+    
+    
+    
+    }
+public async (){
+    
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+
+    
+
+    
+    
+    
+    }
+public async (){
+    
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+
+    
+
+    
+    
+    
+    }
+public async (){
+    
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+
+    
+
+    
+    
+    
+    }
+public async (){
+    
+    new CustomLogger().showLogger('info', 'Enter into sleeptrackdetailsDao.ts: ');
+
+    
+
+    
+    
+    
+    }
 
 
 }

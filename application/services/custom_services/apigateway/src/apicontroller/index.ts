@@ -7,4 +7,6 @@ export * from "./systemcredentialmanagerController";
 export * from "./UserController";
 export * from "./nutrition_detailsController";
 export * from "./execrisedetailsController";
+export * from "./execrisedetailsController";
+export * from "./sleeptrackdetailsController";
 export * from "./sleeptrackdetailsController";

@@ -73,7 +73,9 @@ module.exports = {
             ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8012"}
             ,{"name":"NUTRITIONURL","value":"http://healthmonkstart99410.local:8013"}
             ,{"name":"WORKOUTURL","value":"http://healthmonkstart99410.local:8014"}
-            ,{"name":"SLEEPTRACKURL","value":"http://healthmonkstart99410.local:8015"}
+            ,{"name":"WORKOUTURL","value":"http://healthmonkstart99410.local:8014"}
+            ,{"name":"SLEEPTRACKURL","value":"http://healthmonkstart99410.local:8016"}
+            ,{"name":"SLEEPTRACKURL","value":"http://healthmonkstart99410.local:8016"}
             ],
             "secrets": null,
             "mountPoints": [
